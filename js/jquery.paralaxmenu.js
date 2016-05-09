@@ -12,9 +12,7 @@
         // Default options
         $.fn.paralaxmenu.defaults = {
             container 	: '',
-            wrappers    : ['img'],
-            before	  	: null,
-            complete  	: null
+            wrappers    : ['img']
         };
 
         options = $.extend($.fn.paralaxmenu.defaults, options);
@@ -32,7 +30,7 @@
             // For getting the absolute top margin for the scrolling
             menuMarginTop = parseInt($("div.sub-brochure-menu-ontop").offset().top - $(document).scrollTop());
             menuMarginLeft = parseInt($("div.sub-brochure-menu-ontop").offset().left);
-            menuWidth = $("div.sub-brochure-menu-ontop").width();
+            menuWidth = $("div.sub-brochure-menu-ontop").width() + 10;
 
             // Going through all wrappers and setting them up
             // Initial Setup
@@ -62,9 +60,7 @@
 
             }
 
-            // Bind to scroll
-            $(window).scroll(function() {
-
+            function rePosMenu() {
                 // Get container scroll position
                 var scrollTop = jQuery(document).scrollTop();
 
@@ -91,9 +87,22 @@
                     }
 
                 }
+            }
 
+            // Bind to on page load
+            $(document).ready(function() {
+                rePosMenu();
             });
 
+            // Bind to scroll
+            $(window).on('scroll', function() {
+                rePosMenu();
+            });
+
+            // Bind to resize
+            $(window).on('resize', function() {
+                rePosMenu();
+            });
 
         });
 
