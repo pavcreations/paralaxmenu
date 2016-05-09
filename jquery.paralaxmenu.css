@@ -1,0 +1,99 @@
+/* Original Brochure */
+#sub-brochure-menu{
+    /*position:fixed;*/
+    margin: 0 auto;
+    display:table;
+    width: 100%;
+    line-height: 40px;
+    margin-top: 218px !important;
+    position: fixed;
+    text-align: left;
+    left: 5px;
+    z-index: 3;
+}
+
+#sub-brochure-menu a{
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    margin: 0 2%;
+}
+
+.sub-brochure-menu-ontop {
+    position: fixed;
+    text-align: left;
+    margin-top: 218px;
+    width: auto;
+    left: 5px;
+    line-height: 40px;
+    z-index: 5;
+}
+
+.sub-brochure-menu-ontop a {
+    color:rgba(255,255,255,0);
+    display: block;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    margin: 0 35px;
+}
+
+.sub-brochure-menu-white {
+    display: block;
+    /*left: -50px;*/
+    line-height: 40px;
+    position: absolute;
+    /*top: 0;*/
+    width: 100%;
+    z-index: 999;
+
+}
+.sub-brochure-menu-white a{
+    display: block;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    margin: 0 35px;
+    color: #fff;
+    /*color:rgba(255,0,0,0.3);*/
+}
+
+/* END Testing */
+
+#sub-brochure-menu .proper {
+    position:absolute;
+    z-index: 0;
+    display:inline; margin:0 auto;
+}
+
+
+
+/* Navigation experiment */
+#sub-brochure-menu {
+
+}
+
+/*
+
+left: 78px;
+    margin-top: 60px;
+    position: fixed;
+    text-align: left;
+    width: auto;
+    z-index: -9;
+
+*/
+#sub-brochure-menu a {
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    margin: 0px 35px;
+    display: block;
+
+}
+
+#sub-brochure-menu a.active,
+.sub-brochure-menu-ontop a.active
+{
+    color: #848484 !important;
+}
