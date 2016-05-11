@@ -21,6 +21,8 @@ p                   {font-size: 1.1em; line-height: 1.8em;}
 pre                 {font-size:14px !important;border-radius: 4px !important;}
 xmp                 {border-radius: 4px !important;}
 
+.prettyprint        {overflow:auto;}
+
 .ex-margins         {margin:50px 0 50px;}
 .relative           {position: relative;}
 .fixed              {position: fixed;}
